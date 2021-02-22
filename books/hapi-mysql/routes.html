@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Adding Routes | Jalu P. Rumekso</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="Jalu&#39;s personal website">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.06f9ed6f.css" as="style"><link rel="preload" href="/assets/js/app.bf6a9019.js" as="script"><link rel="preload" href="/assets/js/2.75302286.js" as="script"><link rel="preload" href="/assets/js/22.67180148.js" as="script"><link rel="prefetch" href="/assets/js/10.fe6673c7.js"><link rel="prefetch" href="/assets/js/11.93056b08.js"><link rel="prefetch" href="/assets/js/12.ae155c4d.js"><link rel="prefetch" href="/assets/js/13.74b04675.js"><link rel="prefetch" href="/assets/js/14.ef0cf3d1.js"><link rel="prefetch" href="/assets/js/15.75a14e6d.js"><link rel="prefetch" href="/assets/js/16.907d4ee1.js"><link rel="prefetch" href="/assets/js/17.9214da0c.js"><link rel="prefetch" href="/assets/js/18.4a36748f.js"><link rel="prefetch" href="/assets/js/19.cb613fcb.js"><link rel="prefetch" href="/assets/js/20.839bb821.js"><link rel="prefetch" href="/assets/js/21.2b4fef43.js"><link rel="prefetch" href="/assets/js/23.f60b0a5b.js"><link rel="prefetch" href="/assets/js/24.a135ddac.js"><link rel="prefetch" href="/assets/js/25.edfa72b6.js"><link rel="prefetch" href="/assets/js/26.03a0a6bb.js"><link rel="prefetch" href="/assets/js/27.bac5f71e.js"><link rel="prefetch" href="/assets/js/28.6495ee6d.js"><link rel="prefetch" href="/assets/js/29.bb94a77f.js"><link rel="prefetch" href="/assets/js/3.83754c82.js"><link rel="prefetch" href="/assets/js/30.8aad4159.js"><link rel="prefetch" href="/assets/js/4.ff3f8220.js"><link rel="prefetch" href="/assets/js/5.744a4355.js"><link rel="prefetch" href="/assets/js/6.6e8c67be.js"><link rel="prefetch" href="/assets/js/7.2605c6ec.js"><link rel="prefetch" href="/assets/js/8.b1ef522a.js"><link rel="prefetch" href="/assets/js/9.17f2ad84.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.06f9ed6f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Jalu P. Rumekso</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Books" class="dropdown-title"><span class="title">Books</span> <span class="arrow down"></span></button> <button type="button" aria-label="Books" class="mobile-dropdown-title"><span class="title">Books</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/books/hapi-mysql/introduction.html" class="nav-link">
+  Learn Hapi/MySQL
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="/contact/" class="nav-link">
+  Contact
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Books" class="dropdown-title"><span class="title">Books</span> <span class="arrow down"></span></button> <button type="button" aria-label="Books" class="mobile-dropdown-title"><span class="title">Books</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/books/hapi-mysql/introduction.html" class="nav-link">
+  Learn Hapi/MySQL
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="/contact/" class="nav-link">
+  Contact
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/books/hapi-mysql/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/books/hapi-mysql/setup.html" class="sidebar-link">Project Setup</a></li><li><a href="/books/hapi-mysql/server.html" class="sidebar-link">Creating Server</a></li><li><a href="/books/hapi-mysql/routes.html" aria-current="page" class="active sidebar-link">Adding Routes</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books/hapi-mysql/routes.html#creating-endpoints" class="sidebar-link">Creating Endpoints</a></li><li class="sidebar-sub-header"><a href="/books/hapi-mysql/routes.html#testing-api-using-rest-client-plugin" class="sidebar-link">Testing API using REST Client Plugin</a></li><li class="sidebar-sub-header"><a href="/books/hapi-mysql/routes.html#query-parameter" class="sidebar-link">Query Parameter</a></li><li class="sidebar-sub-header"><a href="/books/hapi-mysql/routes.html#defining-path-parameter" class="sidebar-link">Defining Path Parameter</a></li><li class="sidebar-sub-header"><a href="/books/hapi-mysql/routes.html#capturing-payload" class="sidebar-link">Capturing Payload</a></li></ul></li><li><a href="/books/hapi-mysql/validation.html" class="sidebar-link">Validating User Input</a></li><li><a href="/books/hapi-mysql/response.html" class="sidebar-link">Response Toolkit</a></li><li><a href="/books/hapi-mysql/error.html" class="sidebar-link">Error Handling</a></li><li><a href="/books/hapi-mysql/database.html" class="sidebar-link">Using MySQL</a></li><li><a href="/books/hapi-mysql/modularity.html" class="sidebar-link">Achieving Modularity</a></li><li><a href="/books/hapi-mysql/authentication.html" class="sidebar-link">Authentication</a></li><li><a href="/books/hapi-mysql/authorization.html" class="sidebar-link">Authorization</a></li><li><a href="/books/hapi-mysql/deployment.html" class="sidebar-link">Deployment</a></li><li><a href="/books/hapi-mysql/closing.html" class="sidebar-link">Congratulations!</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="adding-routes"><a href="#adding-routes" class="header-anchor">#</a> Adding Routes</h1> <p>Today Joe has plenty of time to learn more about Hapi. His target is learning how to add routes to his server so it can accept requests for creating and modifying data. And obviously, he also wants to be able to respond to the request back.</p> <p>Before going straight to the documentation, Joe tries to guess it. He has a strong feeling that routing in Hapi has something to do with the server object. Because from the last learning session, he knew that the server object is the main application container. And if it has a bunch of properties such as <code>server.info</code>, then it should also have a bunch of methods and one of them must be a route-related method. That what's Joe thinking about.</p> <p>Then he checks his hypothesis by visiting the documentation, especially the server object API section. And yes he is right. Indeed Hapi has <code>server.route()</code> which responsible for defining route endpoints. Finding his hypothesis get validated, he intends to use that educated guess more often in the future.</p> <h2 id="creating-endpoints"><a href="#creating-endpoints" class="header-anchor">#</a> Creating Endpoints</h2> <p>The <code>server.route()</code> accepts an object as the only parameter with a format of <code>{METHOD, PATH, HANDLER}</code>, which is self-explanatory.</p> <ul><li>method is a string that refers to the name of the HTTP method Joe wants to respond. It accepts any valid HTTP method.</li> <li>path is a string that refers to the actual path that the user will type in the browser (following the hostname).</li> <li>handler is a function where he puts his code for that particular route</li></ul> <p>Given that new knowledge, Joe creates a test route that accepts <code>GET</code> request. Inside the handler, he returns a string that said 'OK'.</p> <div class="language-js extra-class"><pre class="language-js"><code>server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/test&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;OK&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>He starts his server and the terminal greets him with the server info which means his code from the previous coding session is still work. Then he opens his favorite web browser and types out the <code>http://localhost:3000</code> followed by the route path <code>/test</code> at the address bar. When he hits enter, the browser shows 'OK'. Great!</p> <p>Now Joe is ready to replicate the successful test to his initial mission. What is his mission anyway? The point of sale app! After reviewing his <a href="https://jprumekso.github.io/books/hapi-mysql/introduction.html#the-mission" target="_blank" rel="noopener noreferrer">mission brief<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, Joe decides that he'll start with the store resource.</p> <p>He wants the <code>GET</code> stores route to return an array of store objects. However, since he doesn't want to work with the database yet, he will just hardcoded it.</p> <p>So here is Joe's simple pseudo database:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> stores <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;JoeTech Store 1&quot;</span><span class="token punctuation">,</span>
+    address<span class="token operator">:</span> <span class="token string">&quot;East Java, Indonesia&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;JoeTech Store 2&quot;</span><span class="token punctuation">,</span>
+    address<span class="token operator">:</span> <span class="token string">&quot;Lombok, Indonesia&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;JoeTech Store 3&quot;</span><span class="token punctuation">,</span>
+    address<span class="token operator">:</span> <span class="token string">&quot;Bali, Indonesia&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>And for the <code>GET</code> store route his code looks like this:</p> <div class="language-js extra-class"><pre class="language-js"><code>server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/api/stores&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> stores<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>As we can see, he prefixes the stores path with <code>api</code> and uses a plural form for the resource name. Where does he get that information? His best friend, Google. And for the handler, he writes it in the shorthand syntax which is introduced in ES6.</p> <p>One more question, where does he put that code? At first, he puts it inside the init function following the example at Hapi documentation. But when he found that his code still works even if it placed outside the init function, he chooses to place it there. He thinks that it's cleaner that way.</p> <p>So now his <code>app.js</code> code looks like this:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> Hapi <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@hapi/hapi&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> server <span class="token operator">=</span> Hapi<span class="token punctuation">.</span><span class="token function">server</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  port<span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+  host<span class="token operator">:</span> <span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> stores <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;JoeTech Store 1&quot;</span><span class="token punctuation">,</span>
+    address<span class="token operator">:</span> <span class="token string">&quot;East Java, Indonesia&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;JoeTech Store 2&quot;</span><span class="token punctuation">,</span>
+    address<span class="token operator">:</span> <span class="token string">&quot;Lombok, Indonesia&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/test&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;it works...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;OK&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/api/stores&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> stores<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">init</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">await</span> server<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Server started...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>server<span class="token punctuation">.</span>info<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Then he opens his browser again and going to <code>http://localhost:3000/api/stores</code>. When he hits enter, the browser gives him this beautiful response, which is the exact same stores array he created before:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    id: <span class="token number">1</span>,
+    name: <span class="token string">&quot;JoeTech Store 1&quot;</span>,
+    address: <span class="token string">&quot;East Java, Indonesia&quot;</span>,
+  <span class="token punctuation">}</span>,
+  <span class="token punctuation">{</span>
+    id: <span class="token number">2</span>,
+    name: <span class="token string">&quot;JoeTech Store 2&quot;</span>,
+    address: <span class="token string">&quot;Lombok, Indonesia&quot;</span>,
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="testing-api-using-rest-client-plugin"><a href="#testing-api-using-rest-client-plugin" class="header-anchor">#</a> Testing API using REST Client Plugin</h2> <p>Joe realizes that testing his api using a browser will only work for <code>GET</code> endpoint. How about the other endpoints? From a lot of tutorials on Youtube, he knew that the most common way to test API is using Postman. But he wonders if there is a more simple approach to accomplish this task. Then he remembers something...</p> <p>From his frontend development experience, he found that his favorite code editor, the VS Code, has many plugins available (thanks to the wonderful community). So he thought maybe there is a plugin for this particular task. So he goes to his best friend asking this matter. Here is what he asks Google: &quot;how to make api call from vscode&quot;. Without much thinking, his friend gives him a lot of information. But there is one particular piece of info that Joe thinks would work for him, the REST Client plugin by Huachao Mao.</p> <p>How to use REST Client plugin to test api?</p> <p>The documentation says that first, he needs to create a file with <code>.http</code> extension. Joe names it <code>ApiTest.http</code>. Then he needs to write the request with a format like this <code>METHOD URI HTTP/1.1</code>. So here is what he writes for testing the test route:</p> <div class="language-http extra-class"><pre class="language-http"><code><span class="token request-line"><span class="token property">GET</span> http://localhost<span class="token attr-name">:3000</span>/test HTTP/1.1</span>
+</code></pre></div><p>And to send a payload we write the request like this:</p> <div class="language-http extra-class"><pre class="language-http"><code><span class="token request-line"><span class="token property">POST</span> http://localhost<span class="token attr-name">:3000</span>/test HTTP/1.1</span>
+<span class="token header-name keyword">content-type:</span> application/json<span class="token application-json">
+
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Hello&quot;</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><p>Then to execute the request he needs to click the <code>Send Request</code> link at the top of the file.</p> <p>Joe thinks that this plugin is surprisingly easy and intuitive. Thanks to this plugin, now Joe doesn't need to go back and forth between his code editor and Postman.</p> <h2 id="query-parameter"><a href="#query-parameter" class="header-anchor">#</a> Query Parameter</h2> <p>Joe wants the user of his app to be able to search stores by name. He thinks this feature is important when his user has many stores. Also, it's pretty common by the way.</p> <p>In this case, Joe needs to know how to get the value of the query parameter so when he types <code>.../stores?name=something</code> he can catch that 'something' and use it to filters the stores data.</p> <p>The documentation says that Joe can access the query parameter's value from the request parameter object. It's available as the first parameter of the route handler function. It can be named anything, however, the common one is <code>request</code> or <code>req</code> for short.</p> <p>Then Joe tries to implement it. Here is his code:</p> <div class="language-js extra-class"><pre class="language-js"><code>server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/api/stores&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token parameter">req</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> name <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>query<span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> stores<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>name <span class="token operator">===</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> stores<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Now he wants to test this new capability as well as testing the REST Client plugin for &quot;a real use case&quot;. Here is what he writes at <code>ApiTest.http</code>:</p> <div class="language-http extra-class"><pre class="language-http"><code>GET http://localhost:3000/api/stores?name=JoeTech Store 1 HTTP/1.1
+</code></pre></div><p>And here is the result after he clicks the Send Request:</p> <div class="language-http extra-class"><pre class="language-http"><code><span class="token response-status">HTTP/1.1 <span class="token property">200 OK</span></span>
+<span class="token header-name keyword">content-type:</span> application/json; charset=utf-8
+<span class="token header-name keyword">cache-control:</span> no-cache
+<span class="token header-name keyword">content-length:</span> 68
+<span class="token header-name keyword">accept-ranges:</span> bytes
+<span class="token header-name keyword">connection:</span> close
+<span class="token header-name keyword">Date:</span> Wed, 17 Feb 2021 21:48:37 GMT
+
+[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;JoeTech Store 1&quot;,
+    &quot;address&quot;: &quot;East Java, Indonesia&quot;
+  }
+]
+
+</code></pre></div><p>This way, his <code>GET</code> stores route is capable of filtering the stores based on the name specified by the user via the query parameter. Awesome!</p> <h2 id="defining-path-parameter"><a href="#defining-path-parameter" class="header-anchor">#</a> Defining Path Parameter</h2> <p>Listing all stores is only half useful if the user can't see each store's details. So now Joe wants to create a route for retrieving a single store by its id.</p> <p>What does he need to know to achieve this goal? He needs to know how to define and access a path parameter in Hapi.</p> <p>The documentation says that to define a path parameter Joe needs to wrap the name of the parameter with curly braces and simply include it in the path. In this case, what Joe wants to do is writing the route's path in this fashion: <code>/api/stores/{id}</code>. Then he can access that 'id' from the same request object above, specifically from the <code>params</code> property.</p> <p>After understanding that explanation, Joe writes the <code>GET</code> single store route. His code looks like this:</p> <div class="language-js extra-class"><pre class="language-js"><code>server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/api/stores/{id}&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token parameter">req</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> id <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>params<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> stores<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>id <span class="token operator">===</span> id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>His code looks good. He uses the <code>req.params</code> to access the id. Or more precisely, he uses ES6 destructuring to extract the id from <code>req.params</code>.</p> <p>However, when he runs it, he gets this instead of the data of store with id 1:</p> <div class="language-http extra-class"><pre class="language-http"><code><span class="token response-status">HTTP/1.1 <span class="token property">500 Internal Server Error</span></span>
+<span class="token header-name keyword">content-type:</span> application/json; charset=utf-8
+<span class="token header-name keyword">cache-control:</span> no-cache
+<span class="token header-name keyword">content-length:</span> 46
+<span class="token header-name keyword">Date:</span> Wed, 17 Feb 2021 06:56:29 GMT
+<span class="token header-name keyword">Connection:</span> close
+
+{
+  &quot;statusCode&quot;: 500,
+  &quot;error&quot;: &quot;Internal Server Error&quot;,
+  &quot;message&quot;: &quot;An internal server error occurred&quot;
+}
+</code></pre></div><p>And when he checks the terminal, it says:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>Debug: internal, implementation, error
+    Error: handler method did not <span class="token builtin class-name">return</span> a value, a promise, or throw an error
+    <span class="token punctuation">..</span>.
+</code></pre></div><p>When he checks whether the id is obtained successfully using console.log(), it is. But why it still gives him an error? What's wrong?</p> <p>Then he realizes that the path parameter is a string and he uses a strict equality operator to compare it with the store's id which is an integer, of course, he gets an error. So he fixes his code by parsing the path parameter's id to an integer. His code looks like this now.</p> <div class="language-js extra-class"><pre class="language-js"><code>server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/api/stores/{id}&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token parameter">req</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> id <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>params<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> stores<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>id <span class="token operator">===</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Now <code>GET</code> request to http://localhost:3000/api/stores/1 returns:</p> <div class="language-http extra-class"><pre class="language-http"><code><span class="token response-status">HTTP/1.1 <span class="token property">200 OK</span></span>
+<span class="token header-name keyword">content-type:</span> application/json; charset=utf-8
+<span class="token header-name keyword">cache-control:</span> no-cache
+<span class="token header-name keyword">content-length:</span> 46
+<span class="token header-name keyword">Date:</span> Wed, 17 Feb 2021 16:56:29 GMT
+<span class="token header-name keyword">Connection:</span> close
+
+{
+  &quot;id&quot;: 1,
+  &quot;name&quot;: &quot;JoeTech Store 1&quot;,
+  &quot;address&quot;: &quot;East Java, Indonesia&quot;
+}
+</code></pre></div><p>It works!</p> <h2 id="capturing-payload"><a href="#capturing-payload" class="header-anchor">#</a> Capturing Payload</h2> <p>Now Joe wants to work on the create store route. For this task, Joe needs to know how to capture the payload. So how does Hapi handling this matter?</p> <p>Like the path parameter, the payload is also accessible via request object. For example, if Joe wants to echo out the user's payload at his POST <code>/api/stores</code>, then the code will look like this:</p> <div class="language-js extra-class"><pre class="language-js"><code>server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/api/stores&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token parameter">req</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> req<span class="token punctuation">.</span>payload<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>After understanding the method of getting the user's payload then Joe implements the &quot;real&quot; logic for the create new store route.</p> <div class="language-js extra-class"><pre class="language-js"><code>server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/api/stores&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token parameter">req</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> newStore <span class="token operator">=</span> <span class="token punctuation">{</span>
+      id<span class="token operator">:</span> stores<span class="token punctuation">.</span>length <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      name<span class="token operator">:</span> req<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+      address<span class="token operator">:</span> req<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>address<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    stores<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>newStore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> newStore<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Since he uses an array as dummy data, he only needs to catch the incoming store data and push it into the stores array. The data from the payload is passed unchanged except for the id which he manually adds by incrementing the array length by one. Of course, when he uses a database later the code will be more complex than this. After the store is added, he is returning the newly created store.</p> <p>Now it's time to test it. Joe opens the <code>ApiTest.http</code> file and writes the following to create a post request to his new endpoint:</p> <div class="language-http extra-class"><pre class="language-http"><code><span class="token request-line"><span class="token property">POST</span> http://localhost<span class="token attr-name">:3000</span>/api/stores HTTP/1.1</span>
+<span class="token header-name keyword">content-type:</span> application/json<span class="token application-json">
+
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Amalina&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Jakarta, Indonesia&quot;</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><p>When he clicks Send Request, he gets the following response:</p> <div class="language-http extra-class"><pre class="language-http"><code><span class="token response-status">HTTP/1.1 <span class="token property">200 OK</span></span>
+<span class="token header-name keyword">content-type:</span> application/json; charset=utf-8
+<span class="token header-name keyword">cache-control:</span> no-cache
+<span class="token header-name keyword">content-length:</span> 46
+<span class="token header-name keyword">Date:</span> Thu, 18 Feb 2021 14:06:29 GMT
+<span class="token header-name keyword">Connection:</span> close
+
+[
+  {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;Amalina&quot;,
+    &quot;address&quot;: &quot;Indonesia&quot;
+  }
+]
+</code></pre></div><p>It means his code is working! Good job Joe!</p> <p>There is only one route left, the edit store route which accepts a <code>PUT</code> request. Joe thinks that all of his routes, this is the most complex one. This route requires him to catch the path parameter as well as the payload. Thankfully, since he already nails the concept into his head, this complex task becomes easy for him. So here is his code:</p> <div class="language-js extra-class"><pre class="language-js"><code>server<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">&quot;PUT&quot;</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">&quot;/api/stores/{id}&quot;</span><span class="token punctuation">,</span>
+  <span class="token function">handler</span><span class="token punctuation">(</span><span class="token parameter">req</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> id <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>params<span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> theStore <span class="token operator">=</span> stores<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>id <span class="token operator">===</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    theStore<span class="token punctuation">.</span>name <span class="token operator">=</span> req<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+    theStore<span class="token punctuation">.</span>address <span class="token operator">=</span> req<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>address<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> theStore<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>At the handler function, Joe grab the store's id from the path parameter. Then he uses that id to find the store. Then he updates the store data with the incoming payload.</p> <p>He told by the internet that the <code>PUT</code> request should send a full resource. So even if he only wants to update certain property, he still need to send the full resource. So he needs to provide all the neccessary means to edit all store's properties: <code>theStore.id</code>, <code>theStore.name</code> and <code>theStore.address</code>. Surely he needs to find a more elegant way in the future when the store's details is not just name and address anymore.</p> <p>Also he found many warnings to think that <code>POST</code> is exclusively for creating resource and <code>PUT</code> is exclusively for editing resource. Many people said that that's wrong! In fact, both <code>POST</code> and <code>PUT</code> can be used to create and edit a resource. Even though, in practice, he found many tutorials that simply map <code>POST</code> for create operation and <code>PUT</code> for edit operation.</p> <p>Being a good beginner, who doesn't have much experiences yet, he tries to follow what the community said as well as what is make sense for him.</p> <p>Then Joe tries his new route by sending a <code>PUT</code> request to modify the name of the store with id 1.</p> <div class="language-http extra-class"><pre class="language-http"><code><span class="token request-line"><span class="token property">PUT</span> http://localhost<span class="token attr-name">:3000</span>/api/stores/1 HTTP/1.1</span>
+<span class="token header-name keyword">content-type:</span> application/json<span class="token application-json">
+
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;J-Tech&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;address&quot;</span><span class="token operator">:</span> Indonesia
+<span class="token punctuation">}</span>
+</span></code></pre></div><p>And here is what he gets:</p> <div class="language-http extra-class"><pre class="language-http"><code><span class="token response-status">HTTP/1.1 <span class="token property">200 OK</span></span>
+<span class="token header-name keyword">content-type:</span> application/json; charset=utf-8
+<span class="token header-name keyword">cache-control:</span> no-cache
+<span class="token header-name keyword">content-length:</span> 46
+<span class="token header-name keyword">Date:</span> Fri, 19 Feb 2021 06:56:29 GMT
+<span class="token header-name keyword">Connection:</span> close
+
+{
+  &quot;id&quot;: 1,
+  &quot;name&quot;: &quot;J-Tech&quot;,
+  &quot;address&quot;: &quot;Indonesia&quot;
+}
+</code></pre></div><p>Thank God, it works!</p> <p>Having all store routes completed, Joe decides to call it a day. Joe feels happy as he has learned the skill to create routes in Hapi. For the next session, he wants to learn about validation in Hapi so he can make his app more stable.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/books/hapi-mysql/server.html" class="prev">
+        Creating Server
+      </a></span> <span class="next"><a href="/books/hapi-mysql/validation.html">
+        Validating User Input
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.bf6a9019.js" defer></script><script src="/assets/js/2.75302286.js" defer></script><script src="/assets/js/22.67180148.js" defer></script>
+  </body>
+</html>
